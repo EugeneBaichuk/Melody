@@ -520,4 +520,7 @@ path.current-floor {
     right: 40px;
     top: 30px;
   }
+  .menu-button {
+    right: 20px;
+  }
 }
