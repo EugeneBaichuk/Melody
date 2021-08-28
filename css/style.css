@@ -174,6 +174,11 @@ path.current-floor {
   align-items: center;
 }
 
+.footer-part {
+  align-items: center;
+  display: flex;
+}
+
 .navi-text {
   text-align: left;
   display: block;
@@ -398,6 +403,11 @@ path.current-floor {
   .container {
     max-width: 760px;
   }
+
+  .navbar-nav {
+    display: block;
+  }
+
   .navbar-pannel {
     display: none;
     padding: 20px;
@@ -405,11 +415,13 @@ path.current-floor {
     border-bottom-right-radius: 5px;
     position: absolute;
     top: 60px;
-    right: 60px;
+    right: 40px;
     background-color: #635854;
   }
   .navbar-menu {
+    margin: 0px;
     display: block;
+    padding: 0px;
   }
 
   .navbar-item {
@@ -440,6 +452,17 @@ path.current-floor {
     background-color: white;
     display: block;
   }
+  .navigation {
+    display: block;
+  }
+
+  .navi-nav {
+    margin-top: 30px;
+  }
+
+  .navi-item {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 768px) {
   .main {
@@ -453,6 +476,7 @@ path.current-floor {
   }
   .modal-dialog {
     flex-direction: column;
+    margin-top: 20px;
   }
   .modal-image {
     width: 100%;
@@ -472,5 +496,8 @@ path.current-floor {
   }
   .modal-close-button {
     padding-top: 25px;
+  }
+  .navbar-pannel {
+    right: 20px;
   }
 }
