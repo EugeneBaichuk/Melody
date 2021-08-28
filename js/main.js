@@ -11,6 +11,8 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   var navbarPanel = $(".navbar-pannel");
 
+ 
+
   menuButton.on("click",function () {
     navbarPanel.toggle("fast");
   });

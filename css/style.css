@@ -476,8 +476,14 @@ path.current-floor {
   }
   .modal-dialog {
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 70px;
   }
+
+  .modal-close-button {
+    right: 40px;
+    top: 110px;
+  }
+
   .modal-image {
     width: 100%;
     height: 100%;
