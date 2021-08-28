@@ -508,12 +508,16 @@ path.current-floor {
 }
 
 @media (max-width: 500px) {
+  .modal {
+    position: absolute;
+  }
+
   .modal-dialog {
-    margin-top: 350px;
+    margin: auto;
   }
 
   .modal-close-button {
     right: 40px;
-    top: 50px;
+    top: 30px;
   }
 }
