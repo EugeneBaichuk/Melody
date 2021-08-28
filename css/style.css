@@ -476,12 +476,11 @@ path.current-floor {
   }
   .modal-dialog {
     flex-direction: column;
-    margin-top: 70px;
   }
 
   .modal-close-button {
     right: 40px;
-    top: 110px;
+    top: 50px;
   }
 
   .modal-image {
@@ -505,5 +504,16 @@ path.current-floor {
   }
   .navbar-pannel {
     right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-dialog {
+    margin-top: 350px;
+  }
+
+  .modal-close-button {
+    right: 40px;
+    top: 50px;
   }
 }
