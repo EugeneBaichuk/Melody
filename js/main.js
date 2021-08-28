@@ -8,6 +8,12 @@ $(document).ready(function () {
   var viewFlatsButton = $(".view-Flats");
   var flatsPath = $(".flats path");
   var flatLink = 1;
+  var menuButton = $(".menu-button");
+  var navbarPanel = $(".navbar-pannel");
+
+  menuButton.on("click",function () {
+    navbarPanel.toggle("fast");
+  });
 
   floorPath.on("click", toggleModal)
   modalCloseButton.on("click", toggleModal)

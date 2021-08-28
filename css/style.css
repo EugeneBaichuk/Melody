@@ -20,19 +20,36 @@ body {
   background-color: #635854;
   border-bottom: 4px solid #3596f5; /* нижняя граница */
 }
-.navbar {
+.container {
   max-width: 1280px;
   margin: auto; /* блок по центру */
+}
+.navbar {
   display: flex; /*транспонировали текст в блоке по горизонтали*/
   justify-content: space-between; /* растянули элементы по краям */
   align-items: center; /* вертикально центрировали текст */
 }
+
+.menu-button {
+  display: none;
+}
+
+.navbar-pannel {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar-menu {
-  margin: 0; /* отключаем внешние отступы*/
-  padding: 0; /* отключаем внутренние отступы*/
   list-style: none; /* отключаем точки списка*/
   display: flex; /*текст по горизонтали*/
   text-align: center; /*выравнивание текств по центру*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar-item {
   margin-left: 40px;
@@ -43,7 +60,8 @@ body {
   color: #fff;
 }
 .navbar-contacts {
-  text-align: right;
+  margin: auto;
+  text-align: center;
 }
 .navbar-text {
   display: block;
@@ -69,9 +87,10 @@ body {
 
 .main {
   display: flex;
-  max-width: 1280px;
-  margin: auto;
   padding-top: 54px;
+}
+.main-image {
+  max-width: 734px;
 }
 
 .home-image path {
@@ -150,8 +169,6 @@ path.current-floor {
 }
 
 .navigation {
-  max-width: 1280px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,7 +183,6 @@ path.current-floor {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  text-align: right;
 }
 
 .navi-phone {
@@ -276,6 +292,7 @@ path.current-floor {
 .modal-info {
   width: 40%;
   padding: 50px 46px;
+  text-align: center;
 }
 
 .flat-list {
@@ -314,9 +331,14 @@ path.current-floor {
   position: absolute;
   right: 27px;
   top: 38px;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.flats {
+  max-width: 433px;
+  width: 100%;
 }
 
 .flats path {
@@ -331,4 +353,124 @@ path.current-floor {
 .is-hover {
   text-decoration-line: underline;
   color: #3596f5;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+    max-width: 1200px;
+  }
+  .social {
+    margin-right: 100px;
+    align-content: left;
+  }
+  .main-info {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    max-width: 960px;
+  }
+  .navbar-item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .social {
+    margin: auto;
+    align-content: left;
+  }
+  .navi-contacts {
+    margin: auto;
+  }
+
+  .navi-item {
+    margin: 2px;
+  }
+  .main-info {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .navbar-pannel {
+    display: none;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background-color: #635854;
+  }
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .navbar-text {
+    text-align: center;
+  }
+  .navbar-contacts {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-button {
+    background-color: transparent;
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-button > .line {
+    height: 3px;
+    background-color: white;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    display: block;
+  }
+  .main-info {
+    padding: 50px;
+  }
+  .counter-group {
+    padding: 40px;
+  }
+  .modal-dialog {
+    flex-direction: column;
+  }
+  .modal-image {
+    width: 100%;
+    height: 100%;
+  }
+  .modal-info {
+    width: 100%;
+  }
+  .flats {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+  }
+  .modal-image > .modal-title {
+    margin: auto;
+    padding-top: 10px;
+  }
+  .modal-close-button {
+    padding-top: 25px;
+  }
 }
