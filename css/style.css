@@ -522,5 +522,11 @@ path.current-floor {
   }
   .menu-button {
     right: 20px;
+    width: 30px;
+    height: 15px;
   }
+  .menu-button > .line {
+    height: 2px;
+    background-color: white;
+    display: block;
 }
